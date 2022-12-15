@@ -1,0 +1,87 @@
+CRITICAL - 2022-12-01 08:28:33 --> Class "CodeIgniter\Filters\FilterJwt" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('pegawai', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 08:56:51 --> Call to undefined method App\Controllers\Otentikasi::fail()
+in APPPATH\Controllers\Otentikasi.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 08:57:01 --> Call to undefined method App\Controllers\Otentikasi::fail()
+in APPPATH\Controllers\Otentikasi.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:00:35 --> Call to undefined method App\Controllers\Otentikasi::fail()
+in APPPATH\Controllers\Otentikasi.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:23:05 --> Data otentikasi tidak ditemukan
+in APPPATH\Models\ModelOtentikasi.php on line 20.
+ 1 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('$email')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:24:36 --> Error Processing Request
+in APPPATH\Models\ModelOtentikasi.php on line 20.
+ 1 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('$email')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:25:13 --> Error Processing Request
+in APPPATH\Models\ModelOtentikasi.php on line 20.
+ 1 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('$email')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:25:42 --> Error Processing Request
+in APPPATH\Models\ModelOtentikasi.php on line 20.
+ 1 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('$email')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:26:31 --> Call to undefined method App\Models\ModelOtentikasi::fail
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\ModelOtentikasi.php(21): CodeIgniter\Model->__call('fail', [...])
+ 2 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('$email')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:27:16 --> Data otentikasi tidak ditemukan
+in APPPATH\Models\ModelOtentikasi.php on line 20.
+ 1 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('$email')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:27:49 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Otentikasi.php on line 42.
+ 1 APPPATH\Controllers\Otentikasi.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Otentikasi.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:27:57 --> Data otentikasi tidak ditemukan
+in APPPATH\Models\ModelOtentikasi.php on line 20.
+ 1 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('$email')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:30:29 --> Data otentikasi tidak ditemukan
+in APPPATH\Models\ModelOtentikasi.php on line 20.
+ 1 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('$email')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

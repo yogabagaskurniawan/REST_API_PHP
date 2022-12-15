@@ -1,0 +1,328 @@
+CRITICAL - 2022-12-02 07:28:01 --> Attempt to read property "ErrorException: Undefined array key 1 in D:\xampp\htdocs\REST_API\ci4-rest-server\app\Helpers\jwt_helper.php:12
+Stack trace:
+#0 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Helpers\jwt_helper.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 12)
+#1 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Filters\FilterJwt.php(21): getJWT('$header')
+#2 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('pegawai/bagas', 'before')
+#4 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\REST_API\ci4-rest-server\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#6 {main}" on string
+in APPPATH\Filters\FilterJwt.php on line 26.
+ 1 APPPATH\Filters\FilterJwt.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "ErrorException: Undefined array key 1 in D:\\xampp\\htdocs\\REST_API\\ci4-rest-server\\app\\Helpers\\jwt_helper.php:12
+Stack trace:
+#0 D:\\xampp\\htdocs\\REST_API\\ci4-rest-server\\app\\Helpers\\jwt_helper.php(12): CodeIgniter\\Debug\\Exceptions->errorHandler(2, \'Undefined array...\', \'D:\\\\xampp\\\\htdocs...\', 12)
+#1 D:\\xampp\\htdocs\\REST_API\\ci4-rest-server\\app\\Filters\\FilterJwt.php(21): getJWT(\'$header\')
+#2 D:\\xampp\\htdocs\\REST_API\\ci4-rest-server\\system\\Filters\\Filters.php(173): App\\Filters\\FilterJwt->before(Object(CodeIgniter\\HTTP\\IncomingRequest), NULL)
+#3 D:\\xampp\\htdocs\\REST_API\\ci4-rest-server\\system\\CodeIgniter.php(455): CodeIgniter\\Filters\\Filters->run(\'pegawai/bagas\', \'before\')
+#4 D:\\xampp\\htdocs\\REST_API\\ci4-rest-server\\system\\CodeIgniter.php(351): CodeIgniter\\CodeIgniter->handleRequest(NULL, Object(Config\\Cache), false)
+#5 D:\\xampp\\htdocs\\REST_API\\ci4-rest-server\\public\\index.php(67): CodeIgniter\\CodeIgniter->run()
+#6 {main}" on string', 'APPPATH\\Filters\\FilterJwt.php', 26)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('pegawai/bagas', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 08:11:05 --> Undefined constant "bagas"
+in APPPATH\Helpers\jwt_helper.php on line 12.
+ 1 APPPATH\Filters\FilterJwt.php(21): getJWT('$header')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('pegawai/1', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 08:52:20 --> mysqli_sql_exception: Unknown column 'yogabag4s@gmail.com' in 'where clause' in D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\REST_API\ci4-rest-server\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Models\ModelOtentikasi.php(18): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('yogabag4s@gmail...')
+#8 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+#9 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#10 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\REST_API\ci4-rest-server\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-02 08:52:20 --> Unknown column 'yogabag4s@gmail.com' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = :yogabag4s@gmail.com:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\ModelOtentikasi.php(18): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('yogabag4s@gmail.com')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 08:55:21 --> mysqli_sql_exception: Unknown column 'yogabag4s@gmail.com' in 'where clause' in D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\REST_API\ci4-rest-server\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Models\ModelOtentikasi.php(18): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('yogabag4s@gmail...')
+#8 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+#9 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#10 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\REST_API\ci4-rest-server\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-02 08:55:21 --> Unknown column 'yogabag4s@gmail.com' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = :yogabag4s@gmail.com:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\ModelOtentikasi.php(18): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('yogabag4s@gmail.com')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 08:56:01 --> mysqli_sql_exception: Unknown column 'yogabag4s@gmail.com' in 'where clause' in D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\REST_API\ci4-rest-server\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Models\ModelOtentikasi.php(18): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('yogabag4s@gmail...')
+#8 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+#9 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#10 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\REST_API\ci4-rest-server\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-02 08:56:01 --> Unknown column 'yogabag4s@gmail.com' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = :yogabag4s@gmail.com:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\ModelOtentikasi.php(18): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('yogabag4s@gmail.com')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 08:56:02 --> mysqli_sql_exception: Unknown column 'yogabag4s@gmail.com' in 'where clause' in D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\REST_API\ci4-rest-server\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Models\ModelOtentikasi.php(18): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('yogabag4s@gmail...')
+#8 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+#9 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#10 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\REST_API\ci4-rest-server\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-02 08:56:02 --> Unknown column 'yogabag4s@gmail.com' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = :yogabag4s@gmail.com:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\ModelOtentikasi.php(18): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('yogabag4s@gmail.com')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 08:56:46 --> mysqli_sql_exception: Unknown column 'yogabag4s@gmail.com' in 'where clause' in D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\REST_API\ci4-rest-server\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Models\ModelOtentikasi.php(18): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('yogabag4s@gmail...')
+#8 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+#9 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#10 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\REST_API\ci4-rest-server\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-02 08:56:46 --> Unknown column 'yogabag4s@gmail.com' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = :yogabag4s@gmail.com:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\ModelOtentikasi.php(18): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('yogabag4s@gmail.com')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 08:58:21 --> mysqli_sql_exception: Unknown column 'yogabag4s@gmail.com' in 'where clause' in D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\REST_API\ci4-rest-server\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\REST_API\ci4-rest-server\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Models\ModelOtentikasi.php(18): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\REST_API\ci4-rest-server\app\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('yogabag4s@gmail...')
+#8 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+#9 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#10 D:\xampp\htdocs\REST_API\ci4-rest-server\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\REST_API\ci4-rest-server\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-02 08:58:21 --> Unknown column 'yogabag4s@gmail.com' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = \'email\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `otentikasi`
+WHERE `yogabag4s@gmail`.`com` = :yogabag4s@gmail.com:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\ModelOtentikasi.php(18): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Otentikasi.php(41): App\Models\ModelOtentikasi->getEmail('yogabag4s@gmail.com')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Otentikasi->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 09:24:54 --> Class "Config\FilterJwt" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('pegawai', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 09:57:02 --> explode() expects at least 2 arguments, 1 given
+in APPPATH\Helpers\jwt_helper.php on line 12.
+ 1 APPPATH\Helpers\jwt_helper.php(12): explode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InlvZ2FiYWc0c0BnbWFpbC5jb20iLCJpYXQiOjE2Njk5OTU1ODksImV4cCI6MTY2OTk5OTE4OX0.A7mcTiw8GsHgDfiUipT3fmGReh1eYNOJyglQR2_hI9w')
+ 2 APPPATH\Filters\FilterJwt.php(21): getJWT('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InlvZ2FiYWc0c0BnbWFpbC5jb20iLCJpYXQiOjE2Njk5OTU1ODksImV4cCI6MTY2OTk5OTE4OX0.A7mcTiw8GsHgDfiUipT3fmGReh1eYNOJyglQR2_hI9w')
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('pegawai', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 10:00:22 --> explode(): Argument #1 ($separator) cannot be empty
+in APPPATH\Helpers\jwt_helper.php on line 12.
+ 1 APPPATH\Helpers\jwt_helper.php(12): explode('ROOTPATH\\public', 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InlvZ2FiYWc0c0BnbWFpbC5jb20iLCJpYXQiOjE2Njk5OTU1ODksImV4cCI6MTY2OTk5OTE4OX0.A7mcTiw8GsHgDfiUipT3fmGReh1eYNOJyglQR2_hI9w')
+ 2 APPPATH\Filters\FilterJwt.php(21): getJWT('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InlvZ2FiYWc0c0BnbWFpbC5jb20iLCJpYXQiOjE2Njk5OTU1ODksImV4cCI6MTY2OTk5OTE4OX0.A7mcTiw8GsHgDfiUipT3fmGReh1eYNOJyglQR2_hI9w')
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('pegawai', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 10:00:45 --> explode(): Argument #1 ($separator) cannot be empty
+in APPPATH\Helpers\jwt_helper.php on line 12.
+ 1 APPPATH\Helpers\jwt_helper.php(12): explode('ROOTPATH\\public', 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InlvZ2FiYWc0c0BnbWFpbC5jb20iLCJpYXQiOjE2Njk5OTU1ODksImV4cCI6MTY2OTk5OTE4OX0.A7mcTiw8GsHgDfiUipT3fmGReh1eYNOJyglQR2_hI9w')
+ 2 APPPATH\Filters\FilterJwt.php(21): getJWT('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InlvZ2FiYWc0c0BnbWFpbC5jb20iLCJpYXQiOjE2Njk5OTU1ODksImV4cCI6MTY2OTk5OTE4OX0.A7mcTiw8GsHgDfiUipT3fmGReh1eYNOJyglQR2_hI9w')
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('pegawai', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 10:01:57 --> explode(): Argument #1 ($separator) cannot be empty
+in APPPATH\Helpers\jwt_helper.php on line 12.
+ 1 APPPATH\Helpers\jwt_helper.php(12): explode('ROOTPATH\\public', 'e')
+ 2 APPPATH\Filters\FilterJwt.php(21): getJWT('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InlvZ2FiYWc0c0BnbWFpbC5jb20iLCJpYXQiOjE2Njk5OTU1ODksImV4cCI6MTY2OTk5OTE4OX0.A7mcTiw8GsHgDfiUipT3fmGReh1eYNOJyglQR2_hI9w')
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('pegawai', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 10:02:01 --> explode(): Argument #1 ($separator) cannot be empty
+in APPPATH\Helpers\jwt_helper.php on line 12.
+ 1 APPPATH\Helpers\jwt_helper.php(12): explode('ROOTPATH\\public', 'e')
+ 2 APPPATH\Filters\FilterJwt.php(21): getJWT('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InlvZ2FiYWc0c0BnbWFpbC5jb20iLCJpYXQiOjE2Njk5OTU1ODksImV4cCI6MTY2OTk5OTE4OX0.A7mcTiw8GsHgDfiUipT3fmGReh1eYNOJyglQR2_hI9w')
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('pegawai', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 10:07:29 --> Class "Key" not found
+in APPPATH\Helpers\jwt_helper.php on line 18.
+ 1 APPPATH\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InlvZ2FiYWc0c0BnbWFpbC5jb20iLCJpYXQiOjE2Njk5OTY5NzksImV4cCI6MTY3MDAwMDU3OX0.D5mIRZs_3U0CPA9Bq4DvGuoG6834Moc7oqM2G6K471s')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('pegawai', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
